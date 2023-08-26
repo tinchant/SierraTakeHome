@@ -13,6 +13,9 @@ namespace SierraTakeHome.Api.Controllers
         [HttpPost()]
         public async Task<IActionResult> Post([FromBody]NewOrder newOrder, [FromServices] IOrderRepository orderRepository, [FromServices]IUnitOfWork unitOfWork)
         {
+            if(!ModelState.IsValid)            
+                return BadRequest(ModelState);           
+
             var order = new Order(newOrder);
             await orderRepository.AddAsync(order);
             await unitOfWork.CommitAsync();
