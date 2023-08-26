@@ -13,7 +13,7 @@ namespace SierraTakeHome.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id, [FromServices] IProductRepository productRepository)
         {
-            return Ok(productRepository.GetByIdAsync(id));
+            return Ok(await productRepository.GetByIdAsync(id));
         }
     }
 }

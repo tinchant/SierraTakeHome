@@ -32,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SierraTakeHome\SierraTakeHome.Domain\SierraTakeHome.Domain.csproj" />
+    <ProjectReference Include="..\SierraTakeHome.Domain\SierraTakeHome.Domain.csproj" />
   </ItemGroup>
 
 </Project>

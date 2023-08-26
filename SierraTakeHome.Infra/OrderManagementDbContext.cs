@@ -18,8 +18,10 @@ namespace SierraTakeHome.Infra
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Product>()
+                .Property(order => order.Price).HasPrecision(14,2);
             modelBuilder.Entity<Order>()
-                .Property(order => order.TotalCost).ValueGeneratedOnAdd().Metadata.SetAfterSaveBehavior(PropertySaveBehavior.Save);
+                .Property(order => order.TotalCost).HasPrecision(14, 2);
             modelBuilder.Entity<Order>()
                 .InsertUsingStoredProcedure(
                 "Order_Insert",
@@ -28,7 +30,7 @@ namespace SierraTakeHome.Infra
                     builder.HasParameter(order => order.CustomerId);
                     builder.HasParameter(order => order.ProductId);
                     builder.HasParameter(order => order.Quantity);
-                    builder.HasResultColumn(order => order.TotalCost);
+                    builder.HasParameter(order => order.TotalCost);
                     builder.HasResultColumn(order => order.Id);
                 });
         }

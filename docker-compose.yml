@@ -6,6 +6,8 @@ services:
     build:
       context: .
       dockerfile: SierraTakeHome.Api/Dockerfile
+    depends_on:
+      - sqlserver
   sqlserver:
     image: "mcr.microsoft.com/mssql/server:2019-latest"
     environment:
