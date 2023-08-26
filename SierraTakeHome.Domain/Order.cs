@@ -1,5 +1,8 @@
-﻿namespace SierraTakeHome.Domain
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace SierraTakeHome.Domain
 {
+    [EntityTypeConfiguration(typeof(OrderConfiguration))] //move to infra later
     public class Order
     {
         public int Id { get; set; }
