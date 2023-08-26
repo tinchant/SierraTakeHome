@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\SierraTakeHome.Infra\SierraTakeHome.Infra.csproj" />
     <ProjectReference Include="..\SierraTakeHome.Domain\SierraTakeHome.Domain.csproj" />
   </ItemGroup>
 

@@ -1,9 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
 
 namespace SierraTakeHome.Domain
 {
-    [EntityTypeConfiguration(typeof(OrderConfiguration))] //move to infra later
-    public class Order
+    
+    public partial class Order
     {
         public int Id { get; set; }
         public int CustomerId { get; set; }
