@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SierraTakeHome.Api", "Sierr
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5411F3E8-C151-4E1E-B038-11F808DCFB7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SierraTakeHome.Infra", "..\SierraTakeHome.Infra\SierraTakeHome.Infra.csproj", "{3492131A-5997-4A71-B125-A7A7C77F8737}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SierraTakeHome.Infra", "SierraTakeHome.Infra\SierraTakeHome.Infra.csproj", "{3492131A-5997-4A71-B125-A7A7C77F8737}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
