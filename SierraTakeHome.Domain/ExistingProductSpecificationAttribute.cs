@@ -2,7 +2,7 @@
 
 namespace SierraTakeHome.Domain
 {
-    internal class ExistingProductAttribute : ValidationAttribute
+    internal class ExistingProductSpecificationAttribute : ValidationAttribute
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {

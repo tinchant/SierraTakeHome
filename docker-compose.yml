@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  sierratakehome.api:
+    image: ${DOCKER_REGISTRY-}sierratakehomeapi
+    build:
+      context: .
+      dockerfile: SierraTakeHome.Api/Dockerfile
