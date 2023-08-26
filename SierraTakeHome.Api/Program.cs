@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using SierraTakeHome.Domain;
+using SierraTakeHome.Infra;
 using System;
 
 var builder = WebApplication.CreateBuilder(args);
